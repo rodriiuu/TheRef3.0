@@ -109,3 +109,16 @@ button:hover {
     width: 250px;    /* Más pequeña para pantallas pequeñas */
   }
 }
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .img-derecha {
+    position: fixed !important;
+    top: auto !important;
+    bottom: 10px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 250px !important;
+    z-index: 1000 !important;
+  }
+}
+

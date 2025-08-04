@@ -63,7 +63,7 @@ button:hover {
 
 .img-derecha {
   position: fixed;
-  top: 2000px;
+  top: 10000px;
   left: 100px;
   width: 100px;
   z-index: 2000;
@@ -98,6 +98,7 @@ button:hover {
 .oculto {
   display: none;
 }
+
 
 
 

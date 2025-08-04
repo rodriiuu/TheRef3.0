@@ -64,9 +64,9 @@ button:hover {
 .img-derecha {
   position: fixed;
   top: 600px;
-  left: 10px;
+  left: 100px;
   width: 200px;
-  z-index: 800;
+  z-index: 2000;
 }
 
 @media print {
@@ -98,6 +98,7 @@ button:hover {
 .oculto {
   display: none;
 }
+
 
 
 

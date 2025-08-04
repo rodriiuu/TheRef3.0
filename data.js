@@ -252,7 +252,37 @@ function mostrarResumen() {
     obtenerValor("zonaSelect") !== "" ? obtenerValor("zonaSelect") : obtenerValor("zona-especifica");
 }
 
+
 function imprimirYReiniciar() {
-  window.print();
+  const contenido = document.getElementById('resultado').innerHTML;
+
+  const ventanaImpresion = window.open('', '', 'width=800,height=600');
+  ventanaImpresion.document.write(`
+    <html>
+      <head>
+        <title>Imprimir Resultado</title>
+        <style>
+          body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            background-color: #fff;
+            color: #000;
+          }
+          h2, h3, p {
+            margin: 10px 0;
+          }
+        </style>
+      </head>
+      <body>
+        ${contenido}
+      </body>
+    </html>
+  `);
+  ventanaImpresion.document.close();
+
+  ventanaImpresion.focus();
+  ventanaImpresion.print();
+
+  ventanaImpresion.close();
   location.reload();
 }

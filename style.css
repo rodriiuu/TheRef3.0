@@ -61,7 +61,6 @@ button:hover {
   display: none;
 }
 
-/* Imagen inicialmente fija arriba a la izquierda en pantallas grandes */
 .img-derecha {
   position: fixed;
   top: 20px;
@@ -70,19 +69,16 @@ button:hover {
   z-index: 1000;
 }
 
-/* Ocultar imagen en impresión */
 @media print {
   .img-derecha {
     display: none !important;
   }
 }
 
-/* Posición relativa para secciones con imagen superpuesta */
 .posicion-relativa {
   position: relative;
 }
 
-/* Imagen superpuesta en sección signos vitales */
 .imagen-superpuesta {
   position: absolute;
   top: 10px;
@@ -99,13 +95,6 @@ button:hover {
   visibility: hidden;
 }
 
-/* Ajustes para tablets en modo vertical */
-@media (max-width: 768px) and (orientation: portrait) {
-  .img-derecha {
-    top: auto;       /* Anula top */
-    bottom: 10px;    /* Pegada abajo */
-    left: 50%;       /* Centrada horizontalmente */
-    transform: translateX(-50%);
-    width: 250px;    /* Más pequeña para pantallas pequeñas */
-  }
+.oculto {
+  display: none;
 }
